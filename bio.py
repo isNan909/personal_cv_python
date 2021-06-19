@@ -13,12 +13,18 @@ while answer != "quit" or "Q" or "q":
             "\n\nI have gathered around 7+ years of professional experience working in this field."
         )
         move = ""
-        experience = "Press keys for: (1)Company one\nback to go back(back)"
+        experience = "\nback to go back(back)\nPress the choices:"
+        for worked in ['(1)Company one','(2)Company two\n']:
+            work_text = print(worked)
         while move != "back":
             answer_two = input(experience)
             if answer_two == "1":
                 print(
-                    "\n\nIn Company one. I was given oppurtunity to work on the process of designing and developing the application.\n"
+                    "\n\nIn Company One. I learnt some great topics around Javascript.\n"
+                )
+            if answer_two == "2":
+                print(
+                    "\n\nIn Company Two. I was given oppurtunity to work on the process of designing and developing the application.\n"
                 )
             if answer_two == "back":
                 break
