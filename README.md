@@ -1,2 +1,2 @@
 # personal_cv_python
-A simple executable personal CV written in Python.
+A dead simple executable personal CV written in Python.
