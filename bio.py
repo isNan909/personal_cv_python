@@ -2,7 +2,7 @@ intro = "\nHi, I am Ishan. I am a Product Designer and Frontend developer."
 print(intro)
 questions = "\nWhat do you want to know about me?Press your keys from the menu number:\n(1)Background\n(2)Experience\n(3)My Personal thoughts\n(quit)Quit\n\n"
 answer = ""
-while answer != "quit" or "Q" or "q":
+while answer not in ["quit" ,"Q"]:
     answer = input(questions)
     if answer == "1":
         print(
@@ -14,7 +14,7 @@ while answer != "quit" or "Q" or "q":
         )
         move = ""
         experience = "\nback to go back(back)\nPress the choices:"
-        for worked in ['(1)Company one','(2)Company two\n']:
+        for worked in ["(1)Company one", "(2)Company two\n"]:
             work_text = print(worked)
         while move != "back":
             answer_two = input(experience)
@@ -32,5 +32,4 @@ while answer != "quit" or "Q" or "q":
         print(
             "\n\nI strongly belive we the professionals of tech industry need to learn and innovate. There is constant change in the technologies in the tech market where we need to update ourselves with. The only thing that is constant is change. I love trying out new technologies and update with modern tools helping our lives more easier. My current learnings include Javascript, UX and Python.\n"
         )
-    if answer == "quit" or "Q" or "q":
-        break
+
